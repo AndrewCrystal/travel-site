@@ -1,0 +1,15 @@
+.generic-content-container {
+	p {
+		line-height: 1.65;
+		margin: 1.8rem 0;
+
+		@mixin atSmall {
+			font-size: 1.125rem;
+		}
+	}
+
+	/* try to stick to 1 nesting deep so rather than add the a above can put it in it its own instead using descendant selector */
+	p a {
+		font-weight: 700;
+	}
+}

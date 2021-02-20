@@ -1,0 +1,18 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #333;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* might as well change this to orange as we'll never want the browser default of blue */
+a {
+	color: $mainOrange;
+}

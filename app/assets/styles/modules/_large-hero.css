@@ -1,18 +1,30 @@
 .large-hero {
-	position: relative;
+	/* position: relative; replaced with grid */
+	display: grid;
+	grid-template-columns: 1fr;
 	border-bottom: 10px solid $mainBlue;
 
 	&__image {
 		/* default images are inline but that means that the browser will treat like text and allow for the bottom part of letters like g y etc changing to block removes this behaviour to treat like a div / rectangle */
-		display: block;
+		/* display: block; moved to block below for grid conversion*/
+		grid-column: 1;
+		grid-row: 1;
+
+		img {
+			display: block;
+		}
 	}
 
 	&__text-content {
-		position: absolute;
+		grid-column: 1;
+		grid-row: 1;
+		align-self: center; /* vertical alignment */
+		padding-top: 60px;
+		/* position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
 		left: 0;
-		width: 100%;
+		width: 100%; replaced with grid */
 		text-align: center;
 	}
 

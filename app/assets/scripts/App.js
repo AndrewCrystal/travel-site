@@ -2,10 +2,13 @@ import '../styles/styles.css';
 // import Person from './modules/Person';
 import MobileMenu from './modules/MobileMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
+import StickyHeader from './modules/StickyHeader';
 
 if (module.hot) {
 	module.hot.accept();
 }
+
+let stickyHeader = new StickyHeader();
 
 //can reuse the same reveal class in this way
 new RevealOnScroll(document.querySelectorAll('.feature-item'), 75);

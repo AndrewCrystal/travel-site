@@ -16,5 +16,7 @@
 @import 'modules/_site-header';
 @import 'modules/_primary-nav';
 @import 'modules/_reveal-item';
+@import 'modules/_modal';
+@import 'modules/_social_icons';
 
 /* order is important here as will get errors if variables used in base style sheet unless variables are called first */
